@@ -1,0 +1,49 @@
+
+ .card-default {
+    color: #333;
+    background: linear-gradient(#fff,#ebebeb) repeat scroll 0 0 transparent;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 100%;
+}
+ .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.title{
+  text-align: center;
+  margin-top: 3%;
+}
+
+.example-button-row{
+  width: 5px;
+  margin: left 10%;
+  margin-right: 65%;
+}
+
+.options-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+  width: 100%;
+}
+
+@media screen and (min-width: 1040px) {
+  .form-card{
+  width: 80%;
+  position: relative;
+  margin-right: 10%;
+}
+}
