@@ -31,6 +31,7 @@ export class PatientCardComponent implements OnInit {
     if(data)
     {
       alert(`Welcome to${this.patientForm.controls['Name']}`);
+      this.dialogRef.close();
     }
     else{
       alert("oops....' something went wrong. Please try again");

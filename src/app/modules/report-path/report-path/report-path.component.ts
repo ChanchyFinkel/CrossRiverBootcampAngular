@@ -17,7 +17,7 @@ export class ReportPathComponent {
   locationsList: Location[] = [];
   displayedColumns: string[] = ['startDate', 'endDate', 'city', 'location', 'delete'];
   dataSource!: MatTableDataSource<Location>;
-
+  
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   patientIdFormControl = new FormControl('', [Validators.required, Validators.minLength(9), Validators.maxLength(9)]);
@@ -65,6 +65,7 @@ export class ReportPathComponent {
     }
   }
   getLocationsByPatientId() {
+  
     this._reportPathService.getPatientById(this.patientIdFormControl.value).subscribe(data => {
       if (data) {
         this._reportPathService.getLocationsByPatientId(this.patientIdFormControl.value).subscribe(data => {
