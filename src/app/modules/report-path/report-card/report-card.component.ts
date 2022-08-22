@@ -19,6 +19,7 @@ export class ReportCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.buildForm();
+    alert("You are not register, Please register now!");
   }
   reportForm!: FormGroup;
 
